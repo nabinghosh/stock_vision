@@ -4,32 +4,68 @@ from pathlib import Path
 import tulipy as ti
 import yfinance as yf
 import logging
+from datetime import datetime
 
 # Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+log_filename = f'preprocessing_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_filename),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 class DataPreprocessor:
     def __init__(self):
         self.base_dir = Path('data')
         self.raw_dir = self.base_dir / 'raw'
+        self.indices_dir = self.raw_dir / 'indices'
+        self.stocks_dir = self.raw_dir / 'stocks'
         self.processed_dir = self.base_dir / 'processed'
-        self.processed_dir.mkdir(parents=True, exist_ok=True)
+        self.processed_stocks_dir = self.processed_dir / 'stocks'
+        self.processed_indices_dir = self.processed_dir / 'indices'
+        
+        # Initialize counters
+        self.successful_processed = 0
+        self.failed_processed = 0
+        
+        # Create necessary directories
+        for directory in [self.processed_dir, self.processed_stocks_dir, self.processed_indices_dir]:
+            directory.mkdir(parents=True, exist_ok=True)
 
-    def load_data(self, filename):
-        """Load data from CSV file"""
+    def load_stock_data(self, filename):
+        """Load stock data from CSV file"""
         try:
-            filepath = self.raw_dir / filename
+            filepath = self.stocks_dir / filename
             if not filepath.exists():
                 logger.error(f"File not found: {filepath}")
                 return pd.DataFrame()
                 
             df = pd.read_csv(filepath, index_col=0, parse_dates=True)
-            logger.info(f"Loaded data shape: {df.shape}")
+            logger.info(f"Loaded stock data shape: {df.shape}")
             return df
         except Exception as e:
             logger.error(f"Error reading {filepath}: {e}")
             return pd.DataFrame()
+
+    def load_index_data(self, filename):
+        """Load index data from CSV file"""
+        try:
+            filepath = self.indices_dir / filename
+            if not filepath.exists():
+                logger.error(f"File not found: {filepath}")
+                return pd.DataFrame()
+                
+            df = pd.read_csv(filepath, index_col=0, parse_dates=True)
+            logger.info(f"Loaded index data shape: {df.shape}")
+            return df
+        except Exception as e:
+            logger.error(f"Error reading {filepath}: {e}")
+            return pd.DataFrame()
+
 
     def handle_missing_values(self, df):
         """Handle missing values in the dataframe"""
@@ -150,10 +186,11 @@ class DataPreprocessor:
         """Process stock data for a given symbol"""
         try:
             filename = f"{symbol.replace('.NS', '')}_stock_data.csv"
-            df = self.load_data(filename)
+            df = self.load_stock_data(filename)
             
             if df.empty:
                 logger.warning(f"Empty dataframe for {symbol}, skipping processing")
+                self.failed_processed += 1
                 return
 
             df = self.handle_missing_values(df)
@@ -163,20 +200,23 @@ class DataPreprocessor:
 
             # Save processed data
             output_filename = f"{symbol.replace('.NS', '')}_processed.csv"
-            df.to_csv(self.processed_dir / output_filename)
+            df.to_csv(self.processed_stocks_dir / output_filename)
             logger.info(f"Processed data saved for {symbol}")
+            self.successful_processed += 1
             
         except Exception as e:
             logger.error(f"Error processing stock data for {symbol}: {e}")
+            self.failed_processed += 1
 
     def process_index_data(self, index_name, index_symbol):
         """Process index data"""
         try:
-            filename = f"{index_name.replace(' ', '_')}_index_data.csv"
-            df = self.load_data(filename)
+            filename = f"{index_symbol.replace('^', '')}_index_data.csv"
+            df = self.load_index_data(filename)
             
             if df.empty:
-                logger. warning(f"Empty dataframe for {index_name}, skipping processing")
+                logger.warning(f"Empty dataframe for {index_name}, skipping processing")
+                self.failed_processed += 1
                 return
 
             df = self.handle_missing_values(df)
@@ -186,30 +226,65 @@ class DataPreprocessor:
 
             # Save processed data
             output_filename = f"{index_name.replace(' ', '_')}_processed.csv"
-            df.to_csv(self.processed_dir / output_filename)
+            df.to_csv(self.processed_indices_dir / output_filename)
             logger.info(f"Processed data saved for {index_name}")
+            self.successful_processed += 1
             
         except Exception as e:
             logger.error(f"Error processing index data for {index_name}: {e}")
+            self.failed_processed += 1
+
 
     def process_all_data(self):
         """Process all stock and index data"""
+        start_time = datetime.now()
+        logger.info("Starting data preprocessing...")
+        
         try:
+            # Reset counters
+            self.successful_processed = 0
+            self.failed_processed = 0
+            
             # Process stock data
             nifty50_symbols = self.get_nifty50_symbols()
+            total_symbols = len(nifty50_symbols) + 16  # this shold be changed whn update indices 
+            logger.info(f"Total files to process: {total_symbols}")
+
             for symbol in nifty50_symbols:
                 self.process_stock_data(symbol)
 
             # Process index data
             indices = {
                 'NIFTY 50': '^NSEI',
+                'NIFTY AUTO': '^CNXAUTO',
                 'SENSEX': '^BSESN',
-                'NIFTY BANK': '^NSEBANK',
+                'NIFTY Bank': '^NSEBANK',
+                'NIFTY Consumer Durables': '^CNXCONSUMER',
+                'NIFTY Financial Services': '^CNXFINANCE',
+                'NIFTY FMCG': '^CNXFMCG',
+                'NIFTY Healthcare': '^CNXHEALTHCARE',
                 'NIFTY IT': '^CNXIT',
-                'NIFTY AUTO': '0P0001PQB7.BO'
+                'NIFTY Media': '^CNXMEDIA',
+                'NIFTY Metal': '^CNXMETAL',
+                'NIFTY Oil & Gas': '^CNXENERGY',
+                'NIFTY Pharma': '^CNXPHARMA',
+                'NIFTY Private Bank': '^CNXPRIVATBANK',
+                'NIFTY PSU Bank': '^CNXPSU',
+                'NIFTY Realty': '^CNXREALTY'
             }
             for index_name, index_symbol in indices.items():
                 self.process_index_data(index_name, index_symbol)
+
+            # Log final statistics
+            end_time = datetime.now()
+            processing_time = (end_time - start_time).total_seconds()
+            
+            logger.info("\nPreprocessing Summary:")
+            logger.info(f"Total files attempted: {total_symbols}")
+            logger.info(f"Successfully processed: {self.successful_processed}")
+            logger.info(f"Failed to process: {self.failed_processed}")
+            logger.info(f"Success rate: {(self.successful_processed/total_symbols)*100:.2f}%")
+            logger.info(f"Total processing time: {processing_time:.2f} seconds")
                 
         except Exception as e:
             logger.error(f"Error processing all data: {e}")
