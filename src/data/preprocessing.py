@@ -5,14 +5,20 @@ import tulipy as ti
 import yfinance as yf
 import logging
 from datetime import datetime
+import threading
+import concurrent.futures
+import multiprocessing
 
-# Set up logging
+#logging
+log_dir = Path('log')
+log_dir.mkdir(parents=True, exist_ok=True)
 log_filename = f'preprocessing_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'
+log_file_path = log_dir / log_filename
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(log_filename),
+        logging.FileHandler(log_file_path),
         logging.StreamHandler()
     ]
 )
@@ -182,61 +188,8 @@ class DataPreprocessor:
             logger.error(f"Error in add_volatility_measures: {e}")
             return df
 
-    def process_stock_data(self, symbol):
-        """Process stock data for a given symbol"""
-        try:
-            filename = f"{symbol.replace('.NS', '')}_stock_data.csv"
-            df = self.load_stock_data(filename)
-            
-            if df.empty:
-                logger.warning(f"Empty dataframe for {symbol}, skipping processing")
-                self.failed_processed += 1
-                return
-
-            df = self.handle_missing_values(df)
-            df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
-            df = self.add_technical_indicators(df)
-            df = self.add_volatility_measures(df)
-
-            # Save processed data
-            output_filename = f"{symbol.replace('.NS', '')}_processed.csv"
-            df.to_csv(self.processed_stocks_dir / output_filename)
-            logger.info(f"Processed data saved for {symbol}")
-            self.successful_processed += 1
-            
-        except Exception as e:
-            logger.error(f"Error processing stock data for {symbol}: {e}")
-            self.failed_processed += 1
-
-    def process_index_data(self, index_name, index_symbol):
-        """Process index data"""
-        try:
-            filename = f"{index_symbol.replace('^', '')}_index_data.csv"
-            df = self.load_index_data(filename)
-            
-            if df.empty:
-                logger.warning(f"Empty dataframe for {index_name}, skipping processing")
-                self.failed_processed += 1
-                return
-
-            df = self.handle_missing_values(df)
-            df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
-            df = self.add_technical_indicators(df)
-            df = self.add_volatility_measures(df)
-
-            # Save processed data
-            output_filename = f"{index_name.replace(' ', '_')}_processed.csv"
-            df.to_csv(self.processed_indices_dir / output_filename)
-            logger.info(f"Processed data saved for {index_name}")
-            self.successful_processed += 1
-            
-        except Exception as e:
-            logger.error(f"Error processing index data for {index_name}: {e}")
-            self.failed_processed += 1
-
-
     def process_all_data(self):
-        """Process all stock and index data"""
+        """Process all stock and index data using parallel processing"""
         start_time = datetime.now()
         logger.info("Starting data preprocessing...")
         
@@ -245,15 +198,8 @@ class DataPreprocessor:
             self.successful_processed = 0
             self.failed_processed = 0
             
-            # Process stock data
+            # Get symbols and indices
             nifty50_symbols = self.get_nifty50_symbols()
-            total_symbols = len(nifty50_symbols) + 16  # this shold be changed whn update indices 
-            logger.info(f"Total files to process: {total_symbols}")
-
-            for symbol in nifty50_symbols:
-                self.process_stock_data(symbol)
-
-            # Process index data
             indices = {
                 'NIFTY 50': '^NSEI',
                 'NIFTY AUTO': '^CNXAUTO',
@@ -272,8 +218,39 @@ class DataPreprocessor:
                 'NIFTY PSU Bank': '^CNXPSU',
                 'NIFTY Realty': '^CNXREALTY'
             }
-            for index_name, index_symbol in indices.items():
-                self.process_index_data(index_name, index_symbol)
+            
+            total_symbols = len(nifty50_symbols) + len(indices)
+            logger.info(f"Total files to process: {total_symbols}")
+
+            # Determine number of workers
+            max_workers = min(multiprocessing.cpu_count(), total_symbols)
+            logger.info(f"Using {max_workers} workers for parallel processing")
+
+            # Process stocks and indices in parallel
+            with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+                # Submit stock processing tasks
+                stock_futures = {
+                    executor.submit(self.process_stock_data, symbol): symbol 
+                    for symbol in nifty50_symbols
+                }
+                
+                # Submit index processing tasks
+                index_futures = {
+                    executor.submit(self.process_index_data, name, symbol): name 
+                    for name, symbol in indices.items()
+                }
+
+                # Combine all futures
+                all_futures = {**stock_futures, **index_futures}
+
+                # Wait for completion and process results
+                for future in concurrent.futures.as_completed(all_futures):
+                    task_id = all_futures[future]
+                    try:
+                        future.result()  # This will raise any exceptions that occurred
+                        logger.info(f"Completed processing {task_id}")
+                    except Exception as e:
+                        logger.error(f"Error processing {task_id}: {e}")
 
             # Log final statistics
             end_time = datetime.now()
@@ -287,7 +264,67 @@ class DataPreprocessor:
             logger.info(f"Total processing time: {processing_time:.2f} seconds")
                 
         except Exception as e:
-            logger.error(f"Error processing all data: {e}")
+            logger.error(f"Error in parallel processing: {e}")
+
+    def process_stock_data(self, symbol):
+        """Process stock data for a given symbol with thread-safe counter updates"""
+        try:
+            filename = f"{symbol.replace('.NS', '')}_stock_data.csv"
+            df = self.load_stock_data(filename)
+            
+            if df.empty:
+                logger.warning(f"Empty dataframe for {symbol}, skipping processing")
+                with threading.Lock():
+                    self.failed_processed += 1
+                return
+
+            df = self.handle_missing_values(df)
+            df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
+            df = self.add_technical_indicators(df)
+            df = self.add_volatility_measures(df)
+
+            # Save processed data
+            output_filename = f"{symbol.replace('.NS', '')}_processed.csv"
+            df.to_csv(self.processed_stocks_dir / output_filename)
+            logger.info(f"Processed data saved for {symbol}")
+            
+            with threading.Lock():
+                self.successful_processed += 1
+            
+        except Exception as e:
+            logger.error(f"Error processing stock data for {symbol}: {e}")
+            with threading.Lock():
+                self.failed_processed += 1
+
+    def process_index_data(self, index_name, index_symbol):
+        """Process index data with thread-safe counter updates"""
+        try:
+            filename = f"{index_symbol.replace('^', '')}_index_data.csv"
+            df = self.load_index_data(filename)
+            
+            if df.empty:
+                logger.warning(f"Empty dataframe for {index_name}, skipping processing")
+                with threading.Lock():
+                    self.failed_processed += 1
+                return
+
+            df = self.handle_missing_values(df)
+            df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
+            df = self.add_technical_indicators(df)
+            df = self.add_volatility_measures(df)
+
+            # Save processed data
+            output_filename = f"{index_name.replace(' ', '_')}_processed.csv"
+            df.to_csv(self.processed_indices_dir / output_filename)
+            logger.info(f"Processed data saved for {index_name}")
+            
+            with threading.Lock():
+                self.successful_processed += 1
+            
+        except Exception as e:
+            logger.error(f"Error processing index data for {index_name}: {e}")
+            with threading.Lock():
+                self.failed_processed += 1
 
     def get_nifty50_symbols(self):
         """Get list of Nifty 50 companies"""

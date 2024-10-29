@@ -7,10 +7,16 @@ from datetime import datetime, timedelta
 import time
 
 # Set up logging
+log_dir = Path('log')
+log_dir.mkdir(parents=True, exist_ok=True)
+log_file_path = log_dir / 'market_data.log'
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.FileHandler('market_data.log'), logging.StreamHandler()]
+    handlers=[
+        logging.FileHandler(log_file_path),  # directory
+        logging.StreamHandler()  # console
+    ]
 )
 logger = logging.getLogger(__name__)
 
@@ -28,20 +34,17 @@ sectors = [
     'Utilities'
 ]
 
-# Define class for fetching stock and index data
 class MarketDataFetcher:
     def __init__(self):
-        # Directory structure for storing data
         self.base_dir = Path('data')
         self.raw_dir = self.base_dir / 'raw'
         self.indices_dir = self.raw_dir / 'indices'
         self.stocks_dir = self.raw_dir / 'stocks'
         
-        # Create necessary directories
+        # directories creation
         for directory in [self.raw_dir, self.indices_dir, self.stocks_dir]:
             directory.mkdir(parents=True, exist_ok=True)
         
-        # Known Yahoo Finance symbols for Indian indices
         self.index_symbols = {
             'NIFTY 50': '^NSEI',
             'NIFTY AUTO': '^CNXAUTO',
@@ -66,7 +69,7 @@ class MarketDataFetcher:
         try:
             nifty50 = pd.read_html('https://en.wikipedia.org/wiki/NIFTY_50')[1]
             symbols = nifty50['Symbol'].tolist()
-            symbols = [f"{symbol}.NS" for symbol in symbols]  # Yahoo Finance format
+            symbols = [f"{symbol}.NS" for symbol in symbols]  # yahoo Finance format
             logger.info(f"Fetched {len(symbols)} Nifty 50 symbols")
             return symbols
         except Exception as e:
@@ -119,10 +122,7 @@ class MarketDataFetcher:
 
     def fetch_and_save_all_data(self, start_date, end_date, max_workers=4):
         """Fetch and save data for all Nifty 50 stocks and indices in parallel"""
-        # Fetch stock symbols (Nifty 50)
         stock_symbols = self.get_nifty50_symbols()
-        
-        # Initialize counters for success/failure
         successful_downloads, failed_downloads = 0, 0
         
         # Use ThreadPoolExecutor for concurrent fetching
