@@ -2,6 +2,7 @@ yfinance
 pandas
 numpy
 nsepy
-sqlalchemy
+# sqlalchemy
 psycopg2-binary
 pandas_datareader
+tulipy
