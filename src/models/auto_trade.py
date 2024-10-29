@@ -1,1 +1,0 @@
-# Create automated trading strategies based on the predictions from the ML models.
