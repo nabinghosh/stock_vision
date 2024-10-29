@@ -1,0 +1,7 @@
+yfinance
+pandas
+numpy
+nsepy
+sqlalchemy
+psycopg2-binary
+pandas_datareader
