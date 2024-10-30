@@ -1,0 +1,170 @@
+2024-10-30 10:32:05,523 - INFO - Fetched 50 Nifty 50 symbols
+2024-10-30 10:32:05,524 - INFO - Processing stock: ADANIENT.NS
+2024-10-30 10:32:05,525 - INFO - Processing stock: ADANIPORTS.NS
+2024-10-30 10:32:05,526 - INFO - Processing stock: APOLLOHOSP.NS
+2024-10-30 10:32:05,526 - INFO - Processing stock: ASIANPAINT.NS
+2024-10-30 10:32:08,530 - INFO - Saved data to data\raw\stocks\ADANIPORTS_stock_data.csv
+2024-10-30 10:32:08,536 - INFO - Processing stock: AXISBANK.NS
+2024-10-30 10:32:08,555 - INFO - Saved data to data\raw\stocks\ASIANPAINT_stock_data.csv
+2024-10-30 10:32:08,555 - INFO - Saved data to data\raw\stocks\ADANIENT_stock_data.csv
+2024-10-30 10:32:08,555 - INFO - Saved data to data\raw\stocks\APOLLOHOSP_stock_data.csv
+2024-10-30 10:32:08,555 - INFO - Processing stock: BAJAJ-AUTO.NS
+2024-10-30 10:32:08,556 - INFO - Processing stock: BAJFINANCE.NS
+2024-10-30 10:32:08,556 - INFO - Processing stock: BAJAJFINSV.NS
+2024-10-30 10:32:08,781 - INFO - Saved data to data\raw\stocks\BAJFINANCE_stock_data.csv
+2024-10-30 10:32:08,785 - INFO - Processing stock: BEL.NS
+2024-10-30 10:32:08,834 - INFO - Saved data to data\raw\stocks\BAJAJFINSV_stock_data.csv
+2024-10-30 10:32:08,835 - INFO - Processing stock: BPCL.NS
+2024-10-30 10:32:08,853 - INFO - Saved data to data\raw\stocks\AXISBANK_stock_data.csv
+2024-10-30 10:32:08,855 - INFO - Processing stock: BHARTIARTL.NS
+2024-10-30 10:32:08,859 - INFO - Saved data to data\raw\stocks\BAJAJ-AUTO_stock_data.csv
+2024-10-30 10:32:08,860 - INFO - Processing stock: BRITANNIA.NS
+2024-10-30 10:32:09,035 - INFO - Saved data to data\raw\stocks\BHARTIARTL_stock_data.csv
+2024-10-30 10:32:09,040 - INFO - Processing stock: CIPLA.NS
+2024-10-30 10:32:09,092 - INFO - Saved data to data\raw\stocks\BEL_stock_data.csv
+2024-10-30 10:32:09,098 - INFO - Processing stock: COALINDIA.NS
+2024-10-30 10:32:09,110 - INFO - Saved data to data\raw\stocks\BRITANNIA_stock_data.csv
+2024-10-30 10:32:09,112 - INFO - Processing stock: DRREDDY.NS
+2024-10-30 10:32:09,122 - INFO - Saved data to data\raw\stocks\BPCL_stock_data.csv
+2024-10-30 10:32:09,123 - INFO - Processing stock: EICHERMOT.NS
+2024-10-30 10:32:09,302 - INFO - Saved data to data\raw\stocks\CIPLA_stock_data.csv
+2024-10-30 10:32:09,302 - INFO - Processing stock: GRASIM.NS
+2024-10-30 10:32:09,331 - INFO - Saved data to data\raw\stocks\EICHERMOT_stock_data.csv
+2024-10-30 10:32:09,335 - INFO - Processing stock: HCLTECH.NS
+2024-10-30 10:32:09,342 - INFO - Saved data to data\raw\stocks\COALINDIA_stock_data.csv
+2024-10-30 10:32:09,343 - INFO - Processing stock: HDFCBANK.NS
+2024-10-30 10:32:09,379 - INFO - Saved data to data\raw\stocks\DRREDDY_stock_data.csv
+2024-10-30 10:32:09,380 - INFO - Processing stock: HDFCLIFE.NS
+2024-10-30 10:32:09,543 - INFO - Saved data to data\raw\stocks\GRASIM_stock_data.csv
+2024-10-30 10:32:09,550 - INFO - Processing stock: HEROMOTOCO.NS
+2024-10-30 10:32:09,605 - INFO - Saved data to data\raw\stocks\HCLTECH_stock_data.csv
+2024-10-30 10:32:09,608 - INFO - Processing stock: HINDALCO.NS
+2024-10-30 10:32:09,614 - INFO - Saved data to data\raw\stocks\HDFCBANK_stock_data.csv
+2024-10-30 10:32:09,616 - INFO - Processing stock: HINDUNILVR.NS
+2024-10-30 10:32:09,626 - INFO - Saved data to data\raw\stocks\HDFCLIFE_stock_data.csv
+2024-10-30 10:32:09,626 - INFO - Processing stock: ICICIBANK.NS
+2024-10-30 10:32:09,748 - INFO - Saved data to data\raw\stocks\HEROMOTOCO_stock_data.csv
+2024-10-30 10:32:09,749 - INFO - Processing stock: INDUSINDBK.NS
+2024-10-30 10:32:09,847 - INFO - Saved data to data\raw\stocks\ICICIBANK_stock_data.csv
+2024-10-30 10:32:09,847 - INFO - Processing stock: INFY.NS
+2024-10-30 10:32:09,870 - INFO - Saved data to data\raw\stocks\HINDUNILVR_stock_data.csv
+2024-10-30 10:32:09,871 - INFO - Processing stock: ITC.NS
+2024-10-30 10:32:09,873 - INFO - Saved data to data\raw\stocks\HINDALCO_stock_data.csv
+2024-10-30 10:32:09,873 - INFO - Processing stock: JSWSTEEL.NS
+2024-10-30 10:32:09,916 - INFO - Saved data to data\raw\stocks\INDUSINDBK_stock_data.csv
+2024-10-30 10:32:09,916 - INFO - Processing stock: KOTAKBANK.NS
+2024-10-30 10:32:10,065 - INFO - Saved data to data\raw\stocks\INFY_stock_data.csv
+2024-10-30 10:32:10,066 - INFO - Processing stock: LT.NS
+2024-10-30 10:32:10,113 - INFO - Saved data to data\raw\stocks\JSWSTEEL_stock_data.csv
+2024-10-30 10:32:10,114 - INFO - Processing stock: M&M.NS
+2024-10-30 10:32:10,143 - INFO - Saved data to data\raw\stocks\ITC_stock_data.csv
+2024-10-30 10:32:10,144 - INFO - Processing stock: MARUTI.NS
+2024-10-30 10:32:10,173 - INFO - Saved data to data\raw\stocks\KOTAKBANK_stock_data.csv
+2024-10-30 10:32:10,173 - INFO - Processing stock: NESTLEIND.NS
+2024-10-30 10:32:10,227 - INFO - Saved data to data\raw\stocks\LT_stock_data.csv
+2024-10-30 10:32:10,227 - INFO - Processing stock: NTPC.NS
+2024-10-30 10:32:10,331 - INFO - Saved data to data\raw\stocks\MARUTI_stock_data.csv
+2024-10-30 10:32:10,332 - INFO - Processing stock: ONGC.NS
+2024-10-30 10:32:10,332 - INFO - Saved data to data\raw\stocks\M&M_stock_data.csv
+2024-10-30 10:32:10,334 - INFO - Processing stock: POWERGRID.NS
+2024-10-30 10:32:10,372 - INFO - Saved data to data\raw\stocks\NESTLEIND_stock_data.csv
+2024-10-30 10:32:10,373 - INFO - Processing stock: RELIANCE.NS
+2024-10-30 10:32:10,422 - INFO - Saved data to data\raw\stocks\NTPC_stock_data.csv
+2024-10-30 10:32:10,423 - INFO - Processing stock: SBILIFE.NS
+2024-10-30 10:32:10,527 - INFO - Saved data to data\raw\stocks\POWERGRID_stock_data.csv
+2024-10-30 10:32:10,527 - INFO - Processing stock: SHRIRAMFIN.NS
+2024-10-30 10:32:10,604 - INFO - Saved data to data\raw\stocks\ONGC_stock_data.csv
+2024-10-30 10:32:10,609 - INFO - Processing stock: SBIN.NS
+2024-10-30 10:32:10,638 - INFO - Saved data to data\raw\stocks\RELIANCE_stock_data.csv
+2024-10-30 10:32:10,642 - INFO - Processing stock: SUNPHARMA.NS
+2024-10-30 10:32:10,646 - INFO - Saved data to data\raw\stocks\SBILIFE_stock_data.csv
+2024-10-30 10:32:10,647 - INFO - Processing stock: TCS.NS
+2024-10-30 10:32:10,720 - INFO - Saved data to data\raw\stocks\SHRIRAMFIN_stock_data.csv
+2024-10-30 10:32:10,720 - INFO - Processing stock: TATACONSUM.NS
+2024-10-30 10:32:10,840 - INFO - Saved data to data\raw\stocks\SBIN_stock_data.csv
+2024-10-30 10:32:10,843 - INFO - Processing stock: TATAMOTORS.NS
+2024-10-30 10:32:10,849 - INFO - Saved data to data\raw\stocks\TCS_stock_data.csv
+2024-10-30 10:32:10,854 - INFO - Processing stock: TATASTEEL.NS
+2024-10-30 10:32:10,879 - INFO - Saved data to data\raw\stocks\SUNPHARMA_stock_data.csv
+2024-10-30 10:32:10,879 - INFO - Processing stock: TECHM.NS
+2024-10-30 10:32:10,957 - INFO - Saved data to data\raw\stocks\TATACONSUM_stock_data.csv
+2024-10-30 10:32:10,957 - INFO - Processing stock: TITAN.NS
+2024-10-30 10:32:11,048 - INFO - Saved data to data\raw\stocks\TECHM_stock_data.csv
+2024-10-30 10:32:11,049 - INFO - Processing stock: TRENT.NS
+2024-10-30 10:32:11,100 - INFO - Saved data to data\raw\stocks\TATASTEEL_stock_data.csv
+2024-10-30 10:32:11,108 - INFO - Processing stock: ULTRACEMCO.NS
+2024-10-30 10:32:11,144 - INFO - Saved data to data\raw\stocks\TATAMOTORS_stock_data.csv
+2024-10-30 10:32:11,145 - INFO - Processing stock: WIPRO.NS
+2024-10-30 10:32:11,154 - INFO - Saved data to data\raw\stocks\TITAN_stock_data.csv
+2024-10-30 10:32:11,156 - INFO - Processing index: ^NSEI
+2024-10-30 10:32:11,204 - INFO - Saved data to data\raw\stocks\TRENT_stock_data.csv
+2024-10-30 10:32:11,205 - INFO - Processing index: ^CNXAUTO
+2024-10-30 10:32:11,317 - INFO - Saved data to data\raw\stocks\ULTRACEMCO_stock_data.csv
+2024-10-30 10:32:11,318 - INFO - Processing index: ^BSESN
+2024-10-30 10:32:11,360 - INFO - Saved data to data\raw\indices\CNXAUTO_index_data.csv
+2024-10-30 10:32:11,364 - INFO - Processing index: ^NSEBANK
+2024-10-30 10:32:11,370 - INFO - Saved data to data\raw\indices\NSEI_index_data.csv
+2024-10-30 10:32:11,371 - INFO - Processing index: ^CNXCONSUMER
+2024-10-30 10:32:11,437 - INFO - Saved data to data\raw\stocks\WIPRO_stock_data.csv
+2024-10-30 10:32:11,437 - INFO - Processing index: ^CNXFINANCE
+2024-10-30 10:32:11,491 - INFO - Saved data to data\raw\indices\BSESN_index_data.csv
+2024-10-30 10:32:11,492 - INFO - Processing index: ^CNXFMCG
+2024-10-30 10:32:11,557 - INFO - Saved data to data\raw\indices\NSEBANK_index_data.csv
+2024-10-30 10:32:11,558 - INFO - Processing index: ^CNXHEALTHCARE
+2024-10-30 10:32:12,980 - ERROR - $^CNXCONSUMER: possibly delisted; no timezone found
+2024-10-30 10:32:12,981 - ERROR - $^CNXFINANCE: possibly delisted; no timezone found
+2024-10-30 10:32:12,982 - WARNING - No data for ^CNXCONSUMER
+2024-10-30 10:32:12,983 - WARNING - No data for ^CNXFINANCE
+2024-10-30 10:32:12,985 - ERROR - $^CNXCONSUMER: possibly delisted; no timezone found
+2024-10-30 10:32:12,986 - ERROR - $^CNXFINANCE: possibly delisted; no timezone found
+2024-10-30 10:32:12,987 - WARNING - No data for ^CNXCONSUMER
+2024-10-30 10:32:12,988 - WARNING - No data for ^CNXFINANCE
+2024-10-30 10:32:12,990 - ERROR - $^CNXCONSUMER: possibly delisted; no timezone found
+2024-10-30 10:32:12,990 - ERROR - $^CNXFINANCE: possibly delisted; no timezone found
+2024-10-30 10:32:12,992 - WARNING - No data for ^CNXCONSUMER
+2024-10-30 10:32:12,992 - WARNING - No data for ^CNXFINANCE
+2024-10-30 10:32:12,993 - ERROR - Failed to fetch data for ^CNXCONSUMER
+2024-10-30 10:32:12,993 - ERROR - Failed to fetch data for ^CNXFINANCE
+2024-10-30 10:32:12,994 - INFO - Processing index: ^CNXIT
+2024-10-30 10:32:12,994 - INFO - Processing index: ^CNXMEDIA
+2024-10-30 10:32:13,058 - INFO - Saved data to data\raw\indices\CNXFMCG_index_data.csv
+2024-10-30 10:32:13,059 - INFO - Processing index: ^CNXMETAL
+2024-10-30 10:32:14,572 - ERROR - $^CNXHEALTHCARE: possibly delisted; no timezone found
+2024-10-30 10:32:14,575 - WARNING - No data for ^CNXHEALTHCARE
+2024-10-30 10:32:14,577 - ERROR - $^CNXHEALTHCARE: possibly delisted; no timezone found
+2024-10-30 10:32:14,578 - WARNING - No data for ^CNXHEALTHCARE
+2024-10-30 10:32:14,580 - ERROR - $^CNXHEALTHCARE: possibly delisted; no timezone found
+2024-10-30 10:32:14,580 - WARNING - No data for ^CNXHEALTHCARE
+2024-10-30 10:32:14,581 - ERROR - Failed to fetch data for ^CNXHEALTHCARE
+2024-10-30 10:32:14,581 - INFO - Processing index: ^CNXENERGY
+2024-10-30 10:32:14,671 - INFO - Saved data to data\raw\indices\CNXIT_index_data.csv
+2024-10-30 10:32:14,673 - INFO - Processing index: ^CNXPHARMA
+2024-10-30 10:32:14,689 - INFO - Saved data to data\raw\indices\CNXMEDIA_index_data.csv
+2024-10-30 10:32:14,691 - INFO - Processing index: ^CNXPRIVATBANK
+2024-10-30 10:32:14,691 - INFO - Saved data to data\raw\indices\CNXMETAL_index_data.csv
+2024-10-30 10:32:14,692 - INFO - Processing index: ^CNXPSU
+2024-10-30 10:32:14,837 - INFO - Saved data to data\raw\indices\CNXENERGY_index_data.csv
+2024-10-30 10:32:14,837 - INFO - Processing index: ^CNXREALTY
+2024-10-30 10:32:14,981 - ERROR - ^CNXPHARMA: Period '1mo' is invalid, must be one of ['1d', '5d']
+2024-10-30 10:32:14,983 - WARNING - No data for ^CNXPHARMA
+2024-10-30 10:32:15,013 - INFO - Saved data to data\raw\indices\CNXREALTY_index_data.csv
+2024-10-30 10:32:16,463 - ERROR - ^CNXPHARMA: Period '1mo' is invalid, must be one of ['1d', '5d']
+2024-10-30 10:32:16,464 - WARNING - No data for ^CNXPHARMA
+2024-10-30 10:32:16,617 - ERROR - $^CNXPRIVATBANK: possibly delisted; no timezone found
+2024-10-30 10:32:16,618 - WARNING - No data for ^CNXPRIVATBANK
+2024-10-30 10:32:16,619 - ERROR - $^CNXPSU: possibly delisted; no timezone found
+2024-10-30 10:32:16,620 - ERROR - ^CNXPHARMA: Period '1mo' is invalid, must be one of ['1d', '5d']
+2024-10-30 10:32:16,621 - ERROR - $^CNXPRIVATBANK: possibly delisted; no timezone found
+2024-10-30 10:32:16,621 - WARNING - No data for ^CNXPSU
+2024-10-30 10:32:16,621 - WARNING - No data for ^CNXPHARMA
+2024-10-30 10:32:16,622 - WARNING - No data for ^CNXPRIVATBANK
+2024-10-30 10:32:16,623 - ERROR - $^CNXPSU: possibly delisted; no timezone found
+2024-10-30 10:32:16,624 - ERROR - Failed to fetch data for ^CNXPHARMA
+2024-10-30 10:32:16,625 - ERROR - $^CNXPRIVATBANK: possibly delisted; no timezone found
+2024-10-30 10:32:16,625 - WARNING - No data for ^CNXPSU
+2024-10-30 10:32:16,627 - WARNING - No data for ^CNXPRIVATBANK
+2024-10-30 10:32:16,628 - ERROR - $^CNXPSU: possibly delisted; no timezone found
+2024-10-30 10:32:16,628 - ERROR - Failed to fetch data for ^CNXPRIVATBANK
+2024-10-30 10:32:16,629 - WARNING - No data for ^CNXPSU
+2024-10-30 10:32:16,630 - ERROR - Failed to fetch data for ^CNXPSU
+2024-10-30 10:32:16,631 - INFO - Download complete. Successful: 60, Failed: 6

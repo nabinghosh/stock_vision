@@ -1,0 +1,868 @@
+2024-10-29 23:57:39,088 - INFO - Starting data preprocessing...
+2024-10-29 23:57:39,852 - INFO - Total files to process: 66
+2024-10-29 23:57:39,852 - INFO - Using 12 workers for parallel processing
+2024-10-29 23:57:39,879 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,879 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,895 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,897 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,897 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,898 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,899 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,914 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,919 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:39,924 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,929 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,940 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:39,943 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,945 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,947 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,950 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,954 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,956 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:39,957 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:39,958 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:39,961 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:39,971 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,974 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,975 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,977 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:39,977 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,980 - INFO - Handled 22 outliers in Open
+2024-10-29 23:57:39,982 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:39,985 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:39,986 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:39,991 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:39,998 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,002 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,004 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,006 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,007 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,009 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,011 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,017 - INFO - Handled 7 outliers in Open
+2024-10-29 23:57:40,018 - INFO - Handled 24 outliers in High
+2024-10-29 23:57:40,025 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,027 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,035 - INFO - Handled 10 outliers in Open
+2024-10-29 23:57:40,039 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,040 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,045 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,049 - INFO - Handled 8 outliers in High
+2024-10-29 23:57:40,052 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,052 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,054 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,059 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,060 - INFO - Handled 23 outliers in Low
+2024-10-29 23:57:40,063 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,066 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,069 - INFO - Handled 11 outliers in High
+2024-10-29 23:57:40,075 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,079 - INFO - Handled 7 outliers in Low
+2024-10-29 23:57:40,083 - INFO - Handled 23 outliers in Volume
+2024-10-29 23:57:40,083 - INFO - Handled 34 outliers in Volume
+2024-10-29 23:57:40,085 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,093 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,103 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,108 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,114 - INFO - Handled 10 outliers in Low
+2024-10-29 23:57:40,117 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,122 - INFO - Handled 7 outliers in Close
+2024-10-29 23:57:40,124 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,127 - INFO - Handled 20 outliers in Volume
+2024-10-29 23:57:40,130 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,130 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,133 - INFO - Handled 23 outliers in Volume
+2024-10-29 23:57:40,137 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,145 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,151 - INFO - Handled 10 outliers in Close
+2024-10-29 23:57:40,153 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,155 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,175 - INFO - Handled 21 outliers in Volume
+2024-10-29 23:57:40,177 - INFO - Handled 8 outliers in Volume
+2024-10-29 23:57:40,179 - INFO - Handled 30 outliers in Volume
+2024-10-29 23:57:40,181 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,182 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,183 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,184 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,193 - INFO - Handled 36 outliers in Volume
+2024-10-29 23:57:40,196 - INFO - Handled 18 outliers in Volume
+2024-10-29 23:57:40,205 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,206 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:40,206 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,208 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,208 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,210 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,211 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,213 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,215 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,221 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,224 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,225 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,227 - INFO - Handled 28 outliers in Volume
+2024-10-29 23:57:40,232 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,233 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,237 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,240 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,242 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,244 - INFO - Handled 18 outliers in Volume
+2024-10-29 23:57:40,245 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,246 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,252 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,255 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,256 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,257 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,258 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,258 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,259 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,261 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,264 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,268 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,274 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,280 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,281 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,282 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,286 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,289 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,293 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,294 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,297 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,302 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,313 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,314 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,316 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,317 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,321 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,328 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,361 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,371 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,372 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,372 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,378 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,381 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,386 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,400 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,406 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,471 - INFO - Processed data saved for ADANIENT.NS
+2024-10-29 23:57:40,497 - INFO - Processed data saved for ADANIPORTS.NS
+2024-10-29 23:57:40,500 - INFO - Completed processing ADANIENT.NS
+2024-10-29 23:57:40,514 - INFO - Technical indicators added successfully
+2024-10-29 23:57:40,515 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,524 - INFO - Completed processing ADANIPORTS.NS
+2024-10-29 23:57:40,576 - INFO - Processed data saved for APOLLOHOSP.NS
+2024-10-29 23:57:40,608 - INFO - Completed processing APOLLOHOSP.NS
+2024-10-29 23:57:40,617 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,620 - INFO - Volatility measures added successfully
+2024-10-29 23:57:40,647 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,661 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,678 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,680 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,681 - INFO - Processed data saved for BPCL.NS
+2024-10-29 23:57:40,706 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,709 - INFO - Completed processing BPCL.NS
+2024-10-29 23:57:40,714 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,724 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,731 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,743 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,751 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,754 - INFO - Processed data saved for ASIANPAINT.NS
+2024-10-29 23:57:40,757 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,757 - INFO - Processed data saved for BAJFINANCE.NS
+2024-10-29 23:57:40,760 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,769 - INFO - Completed processing ASIANPAINT.NS
+2024-10-29 23:57:40,770 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,774 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,782 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,785 - INFO - Processed data saved for BEL.NS
+2024-10-29 23:57:40,785 - INFO - Processed data saved for BHARTIARTL.NS
+2024-10-29 23:57:40,787 - INFO - Processed data saved for BAJAJ-AUTO.NS
+2024-10-29 23:57:40,791 - INFO - Processed data saved for AXISBANK.NS
+2024-10-29 23:57:40,791 - INFO - Completed processing BAJFINANCE.NS
+2024-10-29 23:57:40,815 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,816 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,821 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,826 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,826 - INFO - Processed data saved for BAJAJFINSV.NS
+2024-10-29 23:57:40,829 - INFO - Handled 24 outliers in Volume
+2024-10-29 23:57:40,829 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,833 - INFO - Completed processing BEL.NS
+2024-10-29 23:57:40,833 - INFO - Processed data saved for BRITANNIA.NS
+2024-10-29 23:57:40,851 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,853 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,854 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,863 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,866 - INFO - Completed processing BHARTIARTL.NS
+2024-10-29 23:57:40,866 - INFO - Handled 24 outliers in Volume
+2024-10-29 23:57:40,867 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,867 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,870 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,871 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,874 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,875 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,884 - INFO - Completed processing BAJAJ-AUTO.NS
+2024-10-29 23:57:40,886 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,892 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:40,896 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,897 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,899 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,928 - INFO - Completed processing AXISBANK.NS
+2024-10-29 23:57:40,914 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:40,920 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,927 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,905 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,929 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,934 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,940 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,945 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:40,946 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:40,952 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,955 - INFO - Handled 3 outliers in Open
+2024-10-29 23:57:40,956 - INFO - Completed processing BAJAJFINSV.NS
+2024-10-29 23:57:40,957 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:40,965 - INFO - Handled 7 outliers in Open
+2024-10-29 23:57:40,966 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,971 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:40,975 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:40,981 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:40,983 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,986 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:40,988 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:40,989 - INFO - Completed processing BRITANNIA.NS
+2024-10-29 23:57:40,992 - INFO - Handled 2 outliers in High
+2024-10-29 23:57:40,998 - INFO - Handled 1 outliers in High
+2024-10-29 23:57:41,004 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,006 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,019 - INFO - Handled 8 outliers in High
+2024-10-29 23:57:41,024 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,029 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,031 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,033 - INFO - Handled 19 outliers in Volume
+2024-10-29 23:57:41,040 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,041 - INFO - Handled 4 outliers in Low
+2024-10-29 23:57:41,044 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,045 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,050 - INFO - Handled 3 outliers in Low
+2024-10-29 23:57:41,050 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,056 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,062 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,063 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,066 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,070 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,071 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,072 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,076 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,080 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,081 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,083 - INFO - Handled 2 outliers in Close
+2024-10-29 23:57:41,086 - INFO - Handled 2 outliers in Close
+2024-10-29 23:57:41,093 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,105 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,110 - INFO - Handled 16 outliers in Volume
+2024-10-29 23:57:41,112 - INFO - Handled 6 outliers in Close
+2024-10-29 23:57:41,126 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,131 - INFO - Handled 22 outliers in Volume
+2024-10-29 23:57:41,133 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,141 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,160 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,167 - INFO - Handled 20 outliers in Volume
+2024-10-29 23:57:41,172 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,183 - INFO - Handled 14 outliers in Volume
+2024-10-29 23:57:41,184 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,187 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,190 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,192 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,200 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,205 - INFO - Handled 27 outliers in Volume
+2024-10-29 23:57:41,212 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,215 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,216 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,218 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,224 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,226 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,245 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,251 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,265 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,267 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,270 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,274 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,276 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,276 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,278 - INFO - Processed data saved for CIPLA.NS
+2024-10-29 23:57:41,283 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,284 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,284 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,292 - INFO - Processed data saved for COALINDIA.NS
+2024-10-29 23:57:41,293 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,297 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,299 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,299 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,302 - INFO - Completed processing CIPLA.NS
+2024-10-29 23:57:41,311 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,320 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,323 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,332 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,339 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,349 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,351 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,352 - INFO - Completed processing COALINDIA.NS
+2024-10-29 23:57:41,353 - INFO - Processed data saved for DRREDDY.NS
+2024-10-29 23:57:41,357 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,359 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,361 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,372 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,375 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,376 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,383 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,385 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,392 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,392 - INFO - Completed processing DRREDDY.NS
+2024-10-29 23:57:41,395 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,399 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,412 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,430 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,450 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,476 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,482 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,484 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,497 - INFO - Processed data saved for EICHERMOT.NS
+2024-10-29 23:57:41,503 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,504 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,555 - INFO - Processed data saved for GRASIM.NS
+2024-10-29 23:57:41,558 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,580 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,583 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,586 - INFO - Completed processing EICHERMOT.NS
+2024-10-29 23:57:41,590 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,624 - INFO - Processed data saved for HCLTECH.NS
+2024-10-29 23:57:41,627 - INFO - Completed processing GRASIM.NS
+2024-10-29 23:57:41,631 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,643 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,647 - INFO - Processed data saved for HINDUNILVR.NS
+2024-10-29 23:57:41,651 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,655 - INFO - Completed processing HCLTECH.NS
+2024-10-29 23:57:41,672 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,685 - INFO - Processed data saved for HDFCBANK.NS
+2024-10-29 23:57:41,688 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,703 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,705 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,709 - INFO - Completed processing HINDUNILVR.NS
+2024-10-29 23:57:41,719 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,722 - INFO - Processed data saved for HDFCLIFE.NS
+2024-10-29 23:57:41,726 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,728 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,740 - INFO - Processed data saved for HEROMOTOCO.NS
+2024-10-29 23:57:41,741 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,747 - INFO - Completed processing HDFCBANK.NS
+2024-10-29 23:57:41,752 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,752 - INFO - Processed data saved for HINDALCO.NS
+2024-10-29 23:57:41,759 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,760 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,760 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,763 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,770 - INFO - Completed processing HDFCLIFE.NS
+2024-10-29 23:57:41,775 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,776 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,780 - INFO - Handled 9 outliers in Open
+2024-10-29 23:57:41,784 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,790 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,791 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,795 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,800 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,800 - INFO - Completed processing HEROMOTOCO.NS
+2024-10-29 23:57:41,800 - INFO - Processed data saved for ICICIBANK.NS
+2024-10-29 23:57:41,801 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,804 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,807 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,810 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,815 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,816 - INFO - Handled 9 outliers in High
+2024-10-29 23:57:41,816 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,820 - INFO - Handled 23 outliers in Volume
+2024-10-29 23:57:41,823 - INFO - Handled 2 outliers in Open
+2024-10-29 23:57:41,828 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,829 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,829 - INFO - Completed processing HINDALCO.NS
+2024-10-29 23:57:41,833 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,842 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,847 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,851 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,854 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,855 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,856 - INFO - Handled 12 outliers in Low
+2024-10-29 23:57:41,857 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,859 - INFO - Completed processing ICICIBANK.NS
+2024-10-29 23:57:41,861 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,865 - INFO - Handled 2 outliers in High
+2024-10-29 23:57:41,866 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,868 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:41,869 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,872 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,879 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,881 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,882 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,887 - INFO - Handled 11 outliers in Close
+2024-10-29 23:57:41,889 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:41,892 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,896 - INFO - Handled 3 outliers in Low
+2024-10-29 23:57:41,898 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,902 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:41,902 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,911 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,916 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,921 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,927 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:41,929 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,932 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,942 - INFO - Handled 3 outliers in Close
+2024-10-29 23:57:41,945 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,947 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:41,951 - INFO - Handled 10 outliers in Volume
+2024-10-29 23:57:41,954 - INFO - Volatility measures added successfully
+2024-10-29 23:57:41,958 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:41,961 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,962 - INFO - Handled 33 outliers in Volume
+2024-10-29 23:57:41,966 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:41,970 - INFO - Technical indicators added successfully
+2024-10-29 23:57:41,973 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,978 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,989 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:41,989 - INFO - Handled 24 outliers in Volume
+2024-10-29 23:57:41,995 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:41,997 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:41,997 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,017 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,024 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,032 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,035 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,039 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,046 - INFO - Handled 25 outliers in Volume
+2024-10-29 23:57:42,050 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,050 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,054 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,057 - INFO - Handled 16 outliers in Volume
+2024-10-29 23:57:42,062 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,065 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,069 - INFO - Handled 26 outliers in Volume
+2024-10-29 23:57:42,089 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,090 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,092 - INFO - Handled 19 outliers in Volume
+2024-10-29 23:57:42,104 - INFO - Processed data saved for INFY.NS
+2024-10-29 23:57:42,111 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,113 - INFO - Processed data saved for ITC.NS
+2024-10-29 23:57:42,114 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,115 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,115 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,118 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,121 - INFO - Processed data saved for INDUSINDBK.NS
+2024-10-29 23:57:42,124 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,127 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,129 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,131 - INFO - Completed processing INFY.NS
+2024-10-29 23:57:42,133 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,134 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,138 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,144 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,145 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,146 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,150 - INFO - Handled 20 outliers in Volume
+2024-10-29 23:57:42,152 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,155 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,155 - INFO - Completed processing ITC.NS
+2024-10-29 23:57:42,157 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,163 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,163 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,164 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,165 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,171 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,172 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,173 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,175 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,193 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,193 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,194 - INFO - Completed processing INDUSINDBK.NS
+2024-10-29 23:57:42,198 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,204 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,210 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,211 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,227 - INFO - Processed data saved for KOTAKBANK.NS
+2024-10-29 23:57:42,245 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,251 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,260 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,279 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,284 - INFO - Processed data saved for LT.NS
+2024-10-29 23:57:42,287 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,301 - INFO - Processed data saved for M&M.NS
+2024-10-29 23:57:42,302 - INFO - Processed data saved for JSWSTEEL.NS
+2024-10-29 23:57:42,304 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,306 - INFO - Handled 10 outliers in Open
+2024-10-29 23:57:42,307 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,307 - INFO - Completed processing KOTAKBANK.NS
+2024-10-29 23:57:42,310 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,326 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,334 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,342 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,349 - INFO - Handled 11 outliers in High
+2024-10-29 23:57:42,354 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,355 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,356 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,356 - INFO - Completed processing LT.NS
+2024-10-29 23:57:42,384 - INFO - Processed data saved for MARUTI.NS
+2024-10-29 23:57:42,386 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,387 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,397 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,404 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,445 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,448 - INFO - Processed data saved for NESTLEIND.NS
+2024-10-29 23:57:42,449 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,450 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,454 - INFO - Completed processing M&M.NS
+2024-10-29 23:57:42,455 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,457 - INFO - Processed data saved for ONGC.NS
+2024-10-29 23:57:42,463 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,463 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,472 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,473 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,475 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,477 - INFO - Processed data saved for NTPC.NS
+2024-10-29 23:57:42,480 - INFO - Handled 10 outliers in Close
+2024-10-29 23:57:42,480 - INFO - Completed processing JSWSTEEL.NS
+2024-10-29 23:57:42,484 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,486 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,489 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,501 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,502 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,509 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,526 - INFO - Completed processing MARUTI.NS
+2024-10-29 23:57:42,526 - INFO - Handled 26 outliers in Volume
+2024-10-29 23:57:42,529 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,530 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:42,531 - INFO - Handled 9 outliers in Volume
+2024-10-29 23:57:42,535 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,543 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,548 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,549 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,551 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,551 - INFO - Completed processing NESTLEIND.NS
+2024-10-29 23:57:42,551 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,553 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,559 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,561 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,565 - INFO - Processed data saved for POWERGRID.NS
+2024-10-29 23:57:42,568 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,571 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,573 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,575 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,575 - INFO - Completed processing ONGC.NS
+2024-10-29 23:57:42,578 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,579 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,582 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,583 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,583 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,586 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,586 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,590 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,592 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,594 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,594 - INFO - Completed processing NTPC.NS
+2024-10-29 23:57:42,596 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,598 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,603 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,605 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,606 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,607 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,608 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,609 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,611 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,612 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:42,614 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,615 - INFO - Completed processing POWERGRID.NS
+2024-10-29 23:57:42,616 - INFO - Handled 23 outliers in Volume
+2024-10-29 23:57:42,619 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,623 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,628 - INFO - Handled 23 outliers in Volume
+2024-10-29 23:57:42,629 - INFO - Handled 12 outliers in Volume
+2024-10-29 23:57:42,632 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,634 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,635 - INFO - Handled 26 outliers in Volume
+2024-10-29 23:57:42,640 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,643 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,646 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:42,646 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,651 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,657 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,661 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,662 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,662 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,667 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,669 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,670 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,676 - INFO - Handled 47 outliers in Open
+2024-10-29 23:57:42,680 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,682 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,686 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:42,688 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,694 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:42,702 - INFO - Handled 26 outliers in Volume
+2024-10-29 23:57:42,712 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,714 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,716 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,721 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,726 - INFO - Handled 48 outliers in High
+2024-10-29 23:57:42,733 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,746 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:42,758 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,761 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,763 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,765 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,778 - INFO - Handled 20 outliers in Volume
+2024-10-29 23:57:42,788 - INFO - Handled 48 outliers in Low
+2024-10-29 23:57:42,802 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,803 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,803 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,805 - INFO - Handled 22 outliers in Volume
+2024-10-29 23:57:42,809 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,819 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,822 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,822 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,825 - INFO - Handled 47 outliers in Close
+2024-10-29 23:57:42,826 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,829 - INFO - Processed data saved for RELIANCE.NS
+2024-10-29 23:57:42,829 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,839 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,847 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,847 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,849 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,854 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,855 - INFO - Processed data saved for SHRIRAMFIN.NS
+2024-10-29 23:57:42,859 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,861 - INFO - Completed processing RELIANCE.NS
+2024-10-29 23:57:42,863 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,864 - INFO - Handled 15 outliers in Volume
+2024-10-29 23:57:42,866 - INFO - Processed data saved for SBILIFE.NS
+2024-10-29 23:57:42,878 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,879 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:42,882 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,906 - INFO - Completed processing SHRIRAMFIN.NS
+2024-10-29 23:57:42,938 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,949 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,950 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:42,952 - INFO - Loaded stock data shape: (1238, 7)
+2024-10-29 23:57:42,952 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:42,956 - INFO - Completed processing SBILIFE.NS
+2024-10-29 23:57:42,965 - INFO - Volatility measures added successfully
+2024-10-29 23:57:42,985 - INFO - Technical indicators added successfully
+2024-10-29 23:57:42,991 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,993 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:42,998 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:43,019 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,020 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,030 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:43,037 - INFO - Loaded index data shape: (1237, 7)
+2024-10-29 23:57:43,040 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,056 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,067 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,084 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,093 - INFO - Processed data saved for TCS.NS
+2024-10-29 23:57:43,094 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,102 - INFO - Completed processing TCS.NS
+2024-10-29 23:57:43,105 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,110 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,118 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,118 - INFO - Processed data saved for SBIN.NS
+2024-10-29 23:57:43,121 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,147 - INFO - Processed data saved for TATACONSUM.NS
+2024-10-29 23:57:43,149 - INFO - Processed data saved for SUNPHARMA.NS
+2024-10-29 23:57:43,157 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,168 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,182 - INFO - Loaded index data shape: (1224, 7)
+2024-10-29 23:57:43,193 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,198 - INFO - Completed processing SBIN.NS
+2024-10-29 23:57:43,210 - ERROR - File not found: data\raw\indices\CNXCONSUMER_index_data.csv
+2024-10-29 23:57:43,224 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,236 - INFO - Processed data saved for TATASTEEL.NS
+2024-10-29 23:57:43,237 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,244 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,245 - INFO - Completed processing TATACONSUM.NS
+2024-10-29 23:57:43,255 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,261 - INFO - Loaded index data shape: (1232, 7)
+2024-10-29 23:57:43,262 - WARNING - Empty dataframe for NIFTY Consumer Durables, skipping processing
+2024-10-29 23:57:43,273 - INFO - Loaded index data shape: (1234, 7)
+2024-10-29 23:57:43,275 - ERROR - File not found: data\raw\indices\CNXFINANCE_index_data.csv
+2024-10-29 23:57:43,277 - INFO - Processed data saved for TATAMOTORS.NS
+2024-10-29 23:57:43,282 - INFO - Completed processing SUNPHARMA.NS
+2024-10-29 23:57:43,293 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,295 - INFO - Handled 0 outliers in Volume
+2024-10-29 23:57:43,298 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,301 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,302 - INFO - Processed data saved for TECHM.NS
+2024-10-29 23:57:43,303 - WARNING - Empty dataframe for NIFTY Financial Services, skipping processing
+2024-10-29 23:57:43,303 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,306 - INFO - Handled 27 outliers in Volume
+2024-10-29 23:57:43,307 - ERROR - File not found: data\raw\indices\CNXHEALTHCARE_index_data.csv
+2024-10-29 23:57:43,309 - INFO - Completed processing TATASTEEL.NS
+2024-10-29 23:57:43,310 - INFO - Processed data saved for TITAN.NS
+2024-10-29 23:57:43,325 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,327 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,331 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,331 - INFO - Loaded index data shape: (1223, 7)
+2024-10-29 23:57:43,337 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,339 - INFO - Handled 13 outliers in Volume
+2024-10-29 23:57:43,344 - WARNING - Empty dataframe for NIFTY Healthcare, skipping processing
+2024-10-29 23:57:43,347 - INFO - Completed processing NIFTY Consumer Durables
+2024-10-29 23:57:43,347 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,351 - INFO - Processed data saved for TRENT.NS
+2024-10-29 23:57:43,355 - INFO - Loaded index data shape: (1224, 7)
+2024-10-29 23:57:43,356 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,362 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:43,363 - INFO - Loaded index data shape: (1232, 7)
+2024-10-29 23:57:43,365 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,369 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,373 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,374 - INFO - Completed processing TATAMOTORS.NS
+2024-10-29 23:57:43,377 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,379 - ERROR - File not found: data\raw\indices\CNXPHARMA_index_data.csv
+2024-10-29 23:57:43,382 - ERROR - Error calculating EMA: Length of values (1238) does not match length of index (1229)
+2024-10-29 23:57:43,385 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,386 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:43,386 - INFO - Loaded index data shape: (1224, 7)
+2024-10-29 23:57:43,390 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,394 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,395 - INFO - Completed processing TECHM.NS
+2024-10-29 23:57:43,396 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,401 - WARNING - Empty dataframe for NIFTY Pharma, skipping processing
+2024-10-29 23:57:43,404 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,405 - INFO - Loaded index data shape: (1224, 7)
+2024-10-29 23:57:43,405 - ERROR - Error calculating RSI: Length of values (1224) does not match length of index (1225)
+2024-10-29 23:57:43,407 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,408 - ERROR - Error calculating EMA: Length of values (1237) does not match length of index (1228)
+2024-10-29 23:57:43,412 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,419 - INFO - Completed processing NIFTY Financial Services
+2024-10-29 23:57:43,420 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,421 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,422 - INFO - Handled 4 outliers in Volume
+2024-10-29 23:57:43,426 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,427 - ERROR - File not found: data\raw\indices\CNXPRIVATBANK_index_data.csv
+2024-10-29 23:57:43,428 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,432 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,436 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,437 - ERROR - Error calculating RSI: Length of values (1223) does not match length of index (1224)
+2024-10-29 23:57:43,438 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,440 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,441 - INFO - Completed processing TITAN.NS
+2024-10-29 23:57:43,445 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,449 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,452 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,453 - WARNING - Empty dataframe for NIFTY Private Bank, skipping processing
+2024-10-29 23:57:43,455 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,456 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,460 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,462 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,468 - INFO - Handled 1 outliers in Volume
+2024-10-29 23:57:43,470 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,473 - INFO - Completed processing NIFTY Healthcare
+2024-10-29 23:57:43,474 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,481 - INFO - Handled 8 outliers in Volume
+2024-10-29 23:57:43,483 - ERROR - File not found: data\raw\indices\CNXPSU_index_data.csv
+2024-10-29 23:57:43,483 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,486 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,494 - ERROR - Error calculating EMA: Length of values (1224) does not match length of index (1215)
+2024-10-29 23:57:43,505 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,507 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,513 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,518 - INFO - Completed processing TRENT.NS
+2024-10-29 23:57:43,525 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,528 - WARNING - Empty dataframe for NIFTY PSU Bank, skipping processing
+2024-10-29 23:57:43,530 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,542 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,543 - ERROR - Error calculating RSI: Length of values (1210) does not match length of index (1211)
+2024-10-29 23:57:43,544 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,554 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,565 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,566 - INFO - Handled 4 outliers in Volume
+2024-10-29 23:57:43,568 - INFO - Completed processing NIFTY Pharma
+2024-10-29 23:57:43,576 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,577 - ERROR - Error calculating EMA: Length of values (1232) does not match length of index (1223)
+2024-10-29 23:57:43,584 - ERROR - Error calculating EMA: Length of values (1234) does not match length of index (1225)
+2024-10-29 23:57:43,596 - INFO - Completed processing NIFTY Private Bank
+2024-10-29 23:57:43,601 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,601 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,605 - ERROR - Error calculating RSI: Length of values (1218) does not match length of index (1219)
+2024-10-29 23:57:43,609 - ERROR - Error calculating RSI: Length of values (1220) does not match length of index (1221)
+2024-10-29 23:57:43,610 - INFO - Handled 2 outliers in Volume
+2024-10-29 23:57:43,612 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,612 - INFO - Completed processing NIFTY PSU Bank
+2024-10-29 23:57:43,620 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,627 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,633 - ERROR - Error calculating EMA: Length of values (1223) does not match length of index (1214)
+2024-10-29 23:57:43,634 - INFO - Loaded index data shape: (1224, 7)
+2024-10-29 23:57:43,638 - INFO - Handled 2 outliers in Volume
+2024-10-29 23:57:43,645 - INFO - Processed data saved for ULTRACEMCO.NS
+2024-10-29 23:57:43,652 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,656 - ERROR - Error calculating RSI: Length of values (1209) does not match length of index (1210)
+2024-10-29 23:57:43,656 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,658 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,662 - INFO - Handled 4 outliers in Volume
+2024-10-29 23:57:43,665 - INFO - Completed processing ULTRACEMCO.NS
+2024-10-29 23:57:43,667 - INFO - Handled missing values: 0 values filled
+2024-10-29 23:57:43,676 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,683 - INFO - Handled 4 outliers in Volume
+2024-10-29 23:57:43,686 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,687 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,688 - INFO - Processed data saved for WIPRO.NS
+2024-10-29 23:57:43,698 - ERROR - Error calculating EMA: Length of values (1224) does not match length of index (1215)
+2024-10-29 23:57:43,706 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,712 - INFO - Handled 0 outliers in Open
+2024-10-29 23:57:43,712 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,716 - ERROR - Error calculating EMA: Length of values (1232) does not match length of index (1223)
+2024-10-29 23:57:43,719 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,722 - INFO - Completed processing WIPRO.NS
+2024-10-29 23:57:43,725 - ERROR - Error calculating RSI: Length of values (1210) does not match length of index (1211)
+2024-10-29 23:57:43,736 - INFO - Processed data saved for NIFTY 50
+2024-10-29 23:57:43,741 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,741 - ERROR - Error calculating RSI: Length of values (1218) does not match length of index (1219)
+2024-10-29 23:57:43,752 - INFO - Handled 0 outliers in High
+2024-10-29 23:57:43,754 - ERROR - Error calculating EMA: Length of values (1224) does not match length of index (1215)
+2024-10-29 23:57:43,754 - ERROR - Error calculating EMA: Length of values (1224) does not match length of index (1215)
+2024-10-29 23:57:43,777 - INFO - Completed processing NIFTY 50
+2024-10-29 23:57:43,781 - INFO - Processed data saved for NIFTY AUTO
+2024-10-29 23:57:43,783 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,791 - ERROR - Error calculating RSI: Length of values (1210) does not match length of index (1211)
+2024-10-29 23:57:43,793 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,795 - ERROR - Error calculating RSI: Length of values (1210) does not match length of index (1211)
+2024-10-29 23:57:43,804 - INFO - Handled 0 outliers in Low
+2024-10-29 23:57:43,823 - INFO - Processed data saved for NIFTY Bank
+2024-10-29 23:57:43,824 - INFO - Completed processing NIFTY AUTO
+2024-10-29 23:57:43,825 - INFO - Processed data saved for SENSEX
+2024-10-29 23:57:43,835 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,836 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,839 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,842 - INFO - Processed data saved for NIFTY FMCG
+2024-10-29 23:57:43,845 - INFO - Handled 0 outliers in Close
+2024-10-29 23:57:43,846 - INFO - Completed processing NIFTY Bank
+2024-10-29 23:57:43,847 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,851 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,877 - INFO - Handled 4 outliers in Volume
+2024-10-29 23:57:43,877 - INFO - Completed processing SENSEX
+2024-10-29 23:57:43,900 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,903 - INFO - Processed data saved for NIFTY IT
+2024-10-29 23:57:43,905 - INFO - Completed processing NIFTY FMCG
+2024-10-29 23:57:43,907 - INFO - OHLC values scaled to 0-1 range
+2024-10-29 23:57:43,927 - INFO - Completed processing NIFTY IT
+2024-10-29 23:57:43,946 - ERROR - Error calculating EMA: Length of values (1224) does not match length of index (1215)
+2024-10-29 23:57:43,951 - ERROR - Error calculating RSI: Length of values (1210) does not match length of index (1211)
+2024-10-29 23:57:43,961 - INFO - Processed data saved for NIFTY Media
+2024-10-29 23:57:43,963 - INFO - Completed processing NIFTY Media
+2024-10-29 23:57:43,963 - INFO - Processed data saved for NIFTY Oil & Gas
+2024-10-29 23:57:43,965 - INFO - Technical indicators added successfully
+2024-10-29 23:57:43,966 - INFO - Completed processing NIFTY Oil & Gas
+2024-10-29 23:57:43,973 - INFO - Volatility measures added successfully
+2024-10-29 23:57:43,979 - INFO - Processed data saved for NIFTY Metal
+2024-10-29 23:57:43,992 - INFO - Completed processing NIFTY Metal
+2024-10-29 23:57:44,005 - INFO - Processed data saved for NIFTY Realty
+2024-10-29 23:57:44,006 - INFO - Completed processing NIFTY Realty
+2024-10-29 23:57:44,007 - INFO - 
+Preprocessing Summary:
+2024-10-29 23:57:44,008 - INFO - Total files attempted: 66
+2024-10-29 23:57:44,008 - INFO - Successfully processed: 60
+2024-10-29 23:57:44,008 - INFO - Failed to process: 6
+2024-10-29 23:57:44,009 - INFO - Success rate: 90.91%
+2024-10-29 23:57:44,009 - INFO - Total processing time: 4.92 seconds

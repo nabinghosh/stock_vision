@@ -8,6 +8,7 @@ from datetime import datetime
 import threading
 import concurrent.futures
 import multiprocessing
+from sklearn.preprocessing import MinMaxScaler
 
 #logging
 log_dir = Path('log')
@@ -265,9 +266,30 @@ class DataPreprocessor:
                 
         except Exception as e:
             logger.error(f"Error in parallel processing: {e}")
+            
+    def scale_ohlc(self, df):
+        """Scale Open, High, Low, Close to range 0-1"""
+        if df.empty:
+            return df
+
+        try:
+            scaler = MinMaxScaler()
+            cols_to_scale = ['Open', 'High', 'Low', 'Close', 'Volume']
+            
+            # Check if all columns exist
+            if all(col in df.columns for col in cols_to_scale):
+                df[cols_to_scale] = scaler.fit_transform(df[cols_to_scale])
+                logger.info("OHLC values scaled to 0-1 range")
+            else:
+                missing_cols = [col for col in cols_to_scale if col not in df.columns]
+                logger.warning(f"Columns {missing_cols} not found. Skipping OHLC scaling.")
+            
+            return df
+        except Exception as e:
+            logger.error(f"Error in scale_ohlc: {e}")
+            return df
 
     def process_stock_data(self, symbol):
-        """Process stock data for a given symbol with thread-safe counter updates"""
         try:
             filename = f"{symbol.replace('.NS', '')}_stock_data.csv"
             df = self.load_stock_data(filename)
@@ -280,6 +302,7 @@ class DataPreprocessor:
 
             df = self.handle_missing_values(df)
             df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
+            df = self.scale_ohlc(df)  # Add this line
             df = self.add_technical_indicators(df)
             df = self.add_volatility_measures(df)
 
@@ -297,7 +320,6 @@ class DataPreprocessor:
                 self.failed_processed += 1
 
     def process_index_data(self, index_name, index_symbol):
-        """Process index data with thread-safe counter updates"""
         try:
             filename = f"{index_symbol.replace('^', '')}_index_data.csv"
             df = self.load_index_data(filename)
@@ -310,6 +332,7 @@ class DataPreprocessor:
 
             df = self.handle_missing_values(df)
             df = self.handle_outliers(df, ['Open', 'High', 'Low', 'Close', 'Volume'])
+            df = self.scale_ohlc(df)  # Add this line
             df = self.add_technical_indicators(df)
             df = self.add_volatility_measures(df)
 
