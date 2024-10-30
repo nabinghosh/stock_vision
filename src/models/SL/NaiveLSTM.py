@@ -7,7 +7,7 @@ import logging
 import os
 
 from src.models import config
-from base.env.market import Market
+from src.live_trading.market import Market
 from checkpoints import CHECKPOINTS_DIR
 from src.models.base_model import BaseSLTFModel
 
